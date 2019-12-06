@@ -1,16 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
-import {NbLayoutModule} from '@nebular/theme';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
-    NbLayoutModule,
+    DragDropModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
