@@ -2,6 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {DragDropModule} from '@angular/cdk/drag-drop';
+import {MatDialogModule} from '@angular/material';
+
+
+
 
 
 
@@ -13,6 +17,7 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
   imports: [
     BrowserModule,
     DragDropModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

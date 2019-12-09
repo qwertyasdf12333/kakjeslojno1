@@ -1,38 +1,55 @@
-  .win-windows {
-    position: fixed;
-    background-color: greenyellow;
-    height: 500px;
-    width: 500px;
-    left: 30%;
-    top: 10%;
-    z-index: 1;
-    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0 2px 2px 0 rgba(0, 0, 0, 0.14),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  }
+ #always {
+   position: fixed;
+   background-color: greenyellow;
+   height: 350px;
+   width: 350px;
+   top: 10%;
+   left: 30%;
+   z-index: 1;
+   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+   0 2px 2px 0 rgba(0, 0, 0, 0.14),
+   0 1px 5px 0 rgba(0, 0, 0, 0.12);
+   padding-bottom: 30px;
+ }
 
-  .header-wind {
-    position: absolute;
-    background-color: deepskyblue;
-    top: 0;
-    left: 0;
-    color: #ccc;
-    cursor: pointer;
-    width: 100%;
-    height: 30px;
-  }
+ .always-corner-resize {
+   position: absolute;
+   width: 10px;
+   height: 10px;
+   background-color: red;
+   cursor: grab;
+ }
+
+ #always-top-left-resize { top: -1px; left: -1px; }
+ #always-top-right-resize { top: -1px; right: -1px; }
+ #always-bottom-left-resize { bottom: -1px; left: -1px; }
+ #always-bottom-right-resize { bottom: -1px; right: -1px; }
+
+ .header-wind {
+   position: absolute;
+   background-color: deepskyblue;
+   top: 0;
+   left: 0;
+   color: #ccc;
+   cursor: pointer;
+   width: 100%;
+   height: 30px;
+ }
 
   p {
     margin: 5px;
   }
 
-  .content-box{
-    height: 100%;
-    width: 100%;
-  }
+ .content-box {
+   height: 100%;
+   width: 100%;
+   z-index: 3;
+   margin-top: 30px;
+ }
 
-  .main-content {
-    width: 50px;
-    height: 50px;
-    background-color: red;
-  }
+ .main-icon-lyl {
+   width: 50px;
+   height: 50px;
+   background-color: red;
+   z-index: 3;
+ }

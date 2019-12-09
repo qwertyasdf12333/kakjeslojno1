@@ -1,9 +1,28 @@
-<div class="win-windows" cdkDrag>
+<div id='always' [style.top.px]='y'
+     [style.left.px]='x'
+     [style.width.px]='width'
+     [style.height.px]='height'
+     (mousedown)='onWindowPress($event)' cdkDrag>
+
   <div class="header-wind" cdkDragHandle>
-    <p>YushinCode</p>
+    <p>Yushin-Code</p>
   </div>
+
   <div class="content-box">
-    <div class="main-content" cdkDragBoundary=".content-box" cdkDrag>
+
+    <div class="main-icon-lyl" cdkDragBoundary=".content-box" cdkDrag>
+
     </div>
+
   </div>
+
+  <div (mousedown)='onCornerClick($event, topLeftResize)' id='always-top-left-resize' class='always-corner-resize'></div>
+  <div (mousedown)='onCornerClick($event, topRightResize)' id='always-top-right-resize' class='always-corner-resize'></div>
+  <div (mousedown)='onCornerClick($event, bottomLeftResize)' id='always-bottom-left-resize' class='always-corner-resize'></div>
+  <div (mousedown)='onCornerClick($event, bottomRightResize)' id='always-bottom-right-resize' class='always-corner-resize'></div>
+
 </div>
+
+
+
+
