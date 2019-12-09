@@ -1,37 +1,25 @@
+
+
 <div id='always' [style.top.px]='y'
      [style.left.px]='x'
      [style.width.px]='width'
      [style.height.px]='height'
-     (mousedown)='onWindowPress($event)' cdkDrag>
+     (mousedown)='onWindowPress($event)'
+     cdkDrag
+>
 
   <div class="header-wind" cdkDragHandle>
-    <p>Windows-Color</p>
+    <p>Yushin</p>
   </div>
-
   <div class="content-box">
-
-    <button class="material-icons" cdkDragBoundary=".content-box" cdkDrag>
-        home
-    </button>
-
-    <button class="material-icons" cdkDragBoundary=".content-box" cdkDrag>
-      delete
-    </button>
-
-
-
-    <button class="material-icons" cdkDragBoundary=".content-box" cdkDrag>
-      info
-    </button>
-
-
+    <div class="main-icon-lyl" cdkDragBoundary=".content-box" cdkDrag>
+    </div>
   </div>
 
   <div (mousedown)='onCornerClick($event, topLeftResize)' id='always-top-left-resize' class='always-corner-resize'></div>
   <div (mousedown)='onCornerClick($event, topRightResize)' id='always-top-right-resize' class='always-corner-resize'></div>
   <div (mousedown)='onCornerClick($event, bottomLeftResize)' id='always-bottom-left-resize' class='always-corner-resize'></div>
   <div (mousedown)='onCornerClick($event, bottomRightResize)' id='always-bottom-right-resize' class='always-corner-resize'></div>
-
 </div>
 
 
