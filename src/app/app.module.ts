@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import {MatDialogModule} from '@angular/material';
+import { DashboardLayoutModule } from '@syncfusion/ej2-angular-layouts';
+import {ButtonModule} from '@syncfusion/ej2-angular-buttons';
+
 
 
 
@@ -18,6 +21,8 @@ import {MatDialogModule} from '@angular/material';
     BrowserModule,
     DragDropModule,
     MatDialogModule,
+    DashboardLayoutModule,
+    ButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

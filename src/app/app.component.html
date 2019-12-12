@@ -12,8 +12,11 @@
       <p>Yushin</p>
     </div>
     <div class="content-box">
-      <div class="maket-icon" cdkDragBoundary=".content-box" cdkDrag>
-      </div>
+        <div class="inline" id="control">
+          <ejs-dashboardlayout id='dashboard_default' #defaultLayout [columns]='6' [cellSpacing]='cellSpacing'
+                               [panels]='panels' [allowFloating]='allowFloating' [cellAspectRatio]='cellAspectRatio'>
+          </ejs-dashboardlayout>
+        </div>
     </div>
 
     <div (mousedown)='onCornerClick($event, topLeftResize)' id='always-top-left-resize' class='always-corner-resize'></div>

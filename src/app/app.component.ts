@@ -1,11 +1,23 @@
-import {Component, HostListener, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit, ViewChild, ViewEncapsulation} from '@angular/core';
+import { DashboardLayoutComponent } from '@syncfusion/ej2-angular-layouts';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class AppComponent implements OnInit {
+
+  @ViewChild('defaultLayout') dashboard: DashboardLayoutComponent;
+  public cellSpacing: any = [10, 10];
+  public allowFloating: boolean = false;
+  public cellAspectRatio: number = 100/30;
+  public panels: any = [
+    {'sizeX': 2, 'sizeY': 2, 'row': 1, 'col': 1, content:'<div class="content">YushinCode1</div>'},
+    {'sizeX': 2, 'sizeY': 2, 'row': 1, 'col': 1, content:'<div class="content">YushinCode2</div>'},
+    {'sizeX': 2, 'sizeY': 2, 'row': 1, 'col': 1, content:'<div class="content">YushinCode3</div>'}
+];
 
   x: number;
   y: number;
