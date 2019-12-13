@@ -1,4 +1,5 @@
 <div class="body-back">
+
   <div id='always' [style.top.px]='y'
        [style.left.px]='x'
        [style.width.px]='width'
@@ -12,11 +13,11 @@
       <p>Color-Code</p>
     </div>
     <div class="content-box">
-        <div class="inline" id="control">
+      <div class="inline" id="control">
           <ejs-dashboardlayout id='dashboard_default' #defaultLayout [columns]='6' [cellSpacing]='cellSpacing'
                                [panels]='panels' [allowFloating]='allowFloating' [cellAspectRatio]='cellAspectRatio'>
           </ejs-dashboardlayout>
-        </div>
+      </div>
     </div>
 
     <div (mousedown)='onCornerClick($event, topLeftResize)' id='always-top-left-resize' class='always-corner-resize'></div>
@@ -24,7 +25,5 @@
     <div (mousedown)='onCornerClick($event, bottomLeftResize)' id='always-bottom-left-resize' class='always-corner-resize'></div>
     <div (mousedown)='onCornerClick($event, bottomRightResize)' id='always-bottom-right-resize' class='always-corner-resize'></div>
   </div>
+
 </div>
-
-
-
