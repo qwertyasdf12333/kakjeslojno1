@@ -14,15 +14,15 @@ export class AppComponent implements OnInit {
   public allowFloating: boolean = false;
   public cellAspectRatio: number = 100/30;
   public panels: any = [
-    {'sizeX': 2, 'sizeY': 2, 'row': 1, 'col': 1, content:'<div class="content"><i class="material-icons">\n' +
+    {'sizeX': 2, 'sizeY': 2, 'row': 1, 'col': 1, content:'<div class="content"><button><i class="material-icons">\n' +
         'desktop_windows\n' +
-        '</i></div>'},
-    {'sizeX': 2, 'sizeY': 2, 'row': 1, 'col': 1, content:'<div class="content"><i class="material-icons">\n' +
+        '</i></button></div>'},
+    {'sizeX': 2, 'sizeY': 2, 'row': 1, 'col': 1, content:'<div class="content"><button><i class="material-icons">\n' +
         'delete_outline\n' +
-        '</i></div>'},
-    {'sizeX': 2, 'sizeY': 2, 'row': 1, 'col': 1, content:'<div class="content"><i class="material-icons">\n' +
+        '</i></button></div>'},
+    {'sizeX': 2, 'sizeY': 2, 'row': 1, 'col': 1, content:'<div class="content"><button><i class="material-icons">\n' +
         'build\n' +
-        '</i></div>'}
+        '</i></button></div>'}
 ];
 
   x: number;
