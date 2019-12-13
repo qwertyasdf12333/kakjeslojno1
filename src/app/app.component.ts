@@ -1,4 +1,4 @@
-import {Component, HostListener, OnInit, ViewChild, ViewEncapsulation} from '@angular/core';
+import {Component, HostListener, OnInit,  ViewEncapsulation, ViewChild} from '@angular/core';
 import { DashboardLayoutComponent } from '@syncfusion/ej2-angular-layouts';
 
 @Component({
@@ -14,9 +14,15 @@ export class AppComponent implements OnInit {
   public allowFloating: boolean = false;
   public cellAspectRatio: number = 100/30;
   public panels: any = [
-    {'sizeX': 2, 'sizeY': 2, 'row': 1, 'col': 1, content:'<div class="content">YushinCode1</div>'},
-    {'sizeX': 2, 'sizeY': 2, 'row': 1, 'col': 1, content:'<div class="content">YushinCode2</div>'},
-    {'sizeX': 2, 'sizeY': 2, 'row': 1, 'col': 1, content:'<div class="content">YushinCode3</div>'}
+    {'sizeX': 2, 'sizeY': 2, 'row': 1, 'col': 1, content:'<div class="content"><i class="material-icons">\n' +
+        'desktop_windows\n' +
+        '</i></div>'},
+    {'sizeX': 2, 'sizeY': 2, 'row': 1, 'col': 1, content:'<div class="content"><i class="material-icons">\n' +
+        'delete_outline\n' +
+        '</i></div>'},
+    {'sizeX': 2, 'sizeY': 2, 'row': 1, 'col': 1, content:'<div class="content"><i class="material-icons">\n' +
+        'build\n' +
+        '</i></div>'}
 ];
 
   x: number;
