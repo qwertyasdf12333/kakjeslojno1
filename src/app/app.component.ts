@@ -10,7 +10,7 @@ export class AppComponent implements OnInit {
 
   public cellSpacing: any = [10, 10];
   public allowFloating: boolean = false;
-  public cellAspectRatio: number = 100 / 80;
+  public cellAspectRatio: number = 100 / 90;
   public panels: any = [
     {
       'sizeX': 0,
@@ -139,5 +139,4 @@ export class AppComponent implements OnInit {
     this.draggingWindow = false;
     this.draggingCorner = false;
   }
-
 }
